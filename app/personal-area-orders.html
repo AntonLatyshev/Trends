@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+<body>
+<div id="wrapper">
+    {% include 'hidden-menu.html' %}
+    {% include 'hidden-search.html' %}
+    {% include 'hidden-feedback.html' %}
+
+    {% include 'header.html' %}
+    <main id="main">
+        <div class="content-box">
+            <ul class="breadcrumbs">
+                <li><a href="/">Главная</a></li>
+                <li><span>Блог</span></li>
+            </ul>
+            <span class="box-title">ЛИЧНЫЙ КАБИНЕТ</span>
+            <div class="personal-area-box">
+                <ul class="personal-menu orders">
+                    <li class="link1"><a href="personal-area.html">Моя информация</a></li>
+                    <li class="link2 active"><a href="#">Мои заказы</a></li>
+                    <li class="link3"><a href="personal-area-login.html">Смена пароля</a></li>
+                    <li class="link4"><a href="#">Выход</a></li>
+                </ul>
+                <div class="table-box orders">
+                    <table class="orders-table layout" cellspacing="0" cellpadding="0">
+                        <tr class="cap-table">
+                            <th>№ заказа</th>
+                            <th>Дата заказа</th>
+                            <th>ТТН курьерской службы</th>
+                            <th></th>
+                        </tr>
+                        <tr><td class="number-order">3726185</td><td class="date-order">22.04.2016</td><td class="courier-order">In-time 53463516642</td><td><a href="#">Подробнее</a></td></tr>
+                        <tr><td class="number-order">34683457</td><td class="date-order">23.04.2016</td><td class="courier-order">Новая почта 24546543451234</td><td><a href="personal-area-orders-2.html">Подробнее</a></td></tr>
+                        <tr><td class="number-order">1536327</td><td class="date-order">24.04.2016</td><td class="courier-order">In-time 53463516642</td><td><a href="#">Подробнее</a></td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+
+</div>
+{% include 'js.html' %}
+</body>
+</html>

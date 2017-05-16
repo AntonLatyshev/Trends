@@ -1,0 +1,62 @@
+.table-box {
+  float: right;
+  width: 100%;
+  max-width: 826px;
+  @media screen and (max-width: 1279px) {
+       max-width: 649px;
+  }
+  @media screen and (max-width: 1023px) {
+       max-width: 100%;
+       float: none;
+  }
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e4e4e4;
+    .cap-table {
+      height: 40px;
+      background: #999;
+      color: #fff;
+      border: 1px solid #999;
+      @media screen and (max-width: 479px) {
+          font-size: 11px;
+      }
+    }
+    tr {
+      height: 60px;
+      text-align: center;
+      td {
+        border: 1px solid #e4e4e4;
+        line-height: 18px;
+        @media screen and (max-width: 479px) {
+            font-size: 11px;
+        }
+        a {
+          color: #ffcc00;
+          display: block;
+          &:hover {
+            color: #e7b600;
+          }
+        }
+      }
+    }
+  }
+  .orders-table.layout {
+    table-layout: fixed;
+    @media screen and (max-width: 479px) {
+        table-layout: auto;
+    }
+    td {
+      padding: 20px 40px;
+      @media screen and (max-width: 767px) {
+          padding: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+    .personal-menu.orders {
+        float: none;
+        margin: 0 0 50px 0;
+    }
+}

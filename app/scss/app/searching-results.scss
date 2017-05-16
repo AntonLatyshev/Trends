@@ -1,0 +1,29 @@
+.searching-results {
+    .box-title {
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 30px;
+    }
+    .subtitle {
+        text-align: center;
+        margin: 0 0 50px;
+    }
+    .content-catalog {
+        border-top: 1px solid #e5e5e5;
+        @media screen and(max-width: 1166px) {
+            border-top: none;
+        }
+    }
+    .page-nav {
+        margin: 50px 0 150px;
+        @media screen and(max-width: 1250px) {
+            max-width: 100%;
+        }
+        .nav-box {
+            max-width: 370px;
+            margin: 0 auto;
+        }
+    }
+}

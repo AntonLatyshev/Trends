@@ -1,0 +1,276 @@
+
+
+.content-blog.services {
+    max-width: 1200px;
+    .banner-sliders {
+        .slick-prev {
+            left: -5px;
+        }
+        .slick-prev:focus {
+            background: #fff;
+        }
+        .slick-next {
+            right: -5px;
+        }
+        .slick-next:focus {
+            background: #fff;
+        }
+    }
+    .banner-box {
+        margin: 0 20px;
+    }
+    .banner-box:hover .banner-name {
+        color: #ffcc00;
+    }
+    .do-not-forget {
+        box-sizing: border-box;
+        border: 10px solid red;
+        overflow: hidden;
+        img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+.all-services {
+    max-width: 1172px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    @media screen and (max-width: 1279px) {
+        max-width: 993px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 1023px) {
+        max-width: 738px;
+    }
+    @media screen and (max-width: 767px) {
+        max-width: 608px;
+    }
+    @media screen and (max-width: 639px) {
+        max-width: 536px;
+    }
+    @media screen and (max-width: 567px) {
+        max-width: 100%;
+    }
+    .service-block {
+        float: left;
+        max-width: 293px;
+        width: 100%;
+        height: 360px;
+        box-sizing: border-box;
+        border: solid #f0f0f0;
+        border-width: 0 1px 1px 0;
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width: 1279px) {
+            max-width: 331px;
+            height: auto;
+            width: 50%;
+            .service-box {
+                position: inherit;
+                .nav-service {
+                    display: block;
+                    position: inherit;
+                }
+            }
+        }
+        @media screen and (max-width: 1023px) {
+            max-width: 369px;
+        }
+        @media screen and (max-width: 767px) {
+            max-width: 304px;
+        }
+        @media screen and (max-width: 639px) {
+            max-width: 268px;
+        }
+        @media screen and (max-width: 567px) {
+            padding: 15px 0 0;
+            max-width: 100%;
+            width: 100%;
+            border: 1px solid #efefef;
+            margin: 0 0 10px;
+        }
+        .open-nav-service {
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            margin: 0 0 20px 0;
+            @media screen and (max-width: 567px) {
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+    .service-block:hover {
+        z-index: 2;
+        border-color: transparent;
+        background: #fff;
+        -webkit-box-shadow: 0px 0px 20px 2px rgba(186,186,186,1);
+        -moz-box-shadow: 0px 0px 20px 2px rgba(186,186,186,1);
+        box-shadow: 0px 0px 20px 2px rgba(186,186,186,1);
+        @media screen and (max-width: 1279px) {
+            box-shadow: none;
+            border: 1px solid #f0f0f0;
+        }
+        .service-box-title {
+            color: #ffcc00;
+            @media screen and (max-width: 1279px) {
+                color: inherit;
+            }
+        }
+        .nav-service {
+            display: block;
+            -webkit-box-shadow: 0px 13px 20px 2px rgba(186,186,186,1);
+            -moz-box-shadow: 0px 13px 20px 2px rgba(186,186,186,1);
+            box-shadow: 0px 13px 20px 2px rgba(186,186,186,1);
+            @media screen and (max-width: 1279px) {
+                box-shadow: none;
+            }
+        }
+    }
+}
+.all-services::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.all-services::before {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: #fff;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    @media screen and (max-width: 567px) {
+        display: none;
+    }
+}
+.service-img {
+    height: 200px;
+    line-height: 200px;
+    overflow: hidden;
+    text-align: center;
+    @media screen and (max-width: 567px) {
+        height: 100px;
+        line-height: 100px;
+    }
+    img {
+        vertical-align: middle;
+        display: inline-block;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.service-box-title {
+    display: inline-block;
+    max-width: 200px;
+    line-height: 20px;
+    color: #333;
+    font-weight: 600;
+    max-height: 40px;
+    overflow: hidden;
+    transition: .3s;
+}
+.service-box {
+    padding: 0 30px;
+    text-align: center;
+    position: relative;
+    @media screen and (max-width: 567px) {
+        padding: 0;
+    }
+    .service-text {
+        @media screen and (max-width: 1279px) {
+            padding: 0 15px;
+            margin: 0 0 10px;
+        }
+        p {
+            margin: 0;
+            max-height: 96px;
+            color: #666;
+            font-size: 13px;
+            line-height: 16px;
+            overflow: hidden;
+        }
+    }
+}
+.nav-service {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    z-index: 2;
+    padding: 0 25px 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    background: #fff;
+    text-align: left;
+    @media screen and (max-width: 767px) {
+        padding: 0;
+    }
+    li {
+        text-align: left;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: #666;
+            padding: 10px;
+            position: relative;
+            transition: .3s;
+            @media screen and (max-width: 767px) {
+                font-size: 12px;
+            }
+        }
+        .all-link {
+            color: #333;
+            font-weight: 500;
+            em {
+                display: inline-block;
+                margin-left: 10px;
+                @extend %icon-service_hover_arrow;
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+        a::after {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            @extend %icon-service_hover_arrow;
+        }
+        .all-link::after {
+            display: none;
+            @media screen and (max-width: 767px) {
+                display: block;
+            }
+        }
+    }
+    li:nth-child(1n+2) {
+        border-top: 1px solid #f2f2f2;
+    }
+    li:hover {
+        background: #333;
+        a {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,192 @@
+
+.product-list.vacancies {
+  max-width: 1171px;
+  margin: 0 auto 170px;
+  @media screen and (max-width: 1279px) {
+      padding: 0 15px;
+  }
+  .tabset {
+    float: right;
+    text-align: left;
+    max-width: 275px;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    -moz-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    &::before {
+        display: none;
+    }
+    @media screen and (max-width: 1279px) {
+        float: none;
+        max-width: 100%;
+        white-space: nowrap;
+        padding: 0 0 20px;
+        box-shadow: none;
+    }
+    li {
+        display: block;
+        margin: 0;
+        @media screen and (max-width: 1279px) {
+            display: inline-block;
+        }
+      a {
+        text-transform: capitalize;
+        display: block;
+        position: relative;
+        @media screen and (max-width: 1279px) {
+            padding: 0 30px;
+        }
+      }
+      a::after {
+        top: 0;
+        left: 265px;
+        width: 10px;
+        height: 100%;
+        background: #ffcc00;
+        z-index: 2;
+        @media screen and (max-width: 1279px) {
+            left: 0;
+            top: 100%;
+            height: 5px;
+            width: 100%;
+        }
+      }
+    }
+    li:nth-child(1n+2) {
+      border-top: 1px solid #e3e5e8;
+      @media screen and (max-width: 1279px) {
+          border: none;
+      }
+    }
+  }
+}
+.product-list.vacancies::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.tab-holder.vacancies {
+  max-width: 865px;
+  @media screen and (max-width: 1279px) {
+      max-width: 100%;
+  }
+  .content-faq {
+      @media screen and (max-width: 1279px) {
+          max-width: 100%;
+      }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .summary-link {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background: #333;
+    padding: 15px 30px;
+  }
+  .summary-link:hover {
+    background: #000;
+  }
+  .question {
+    cursor: pointer;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #dedede;
+    width: 100%;
+    margin-bottom: 30px;
+    .question-title {
+      display: block;
+      text-decoration: none;
+      padding: 15px 50px 15px 30px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #333;
+      position: relative;
+    }
+    .question-title::after {
+      cursor: pointer;
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 30px;
+      @extend %icon-faq_open_answer;
+    }
+    .answer {
+      display: none;
+      padding: 0 30px 50px;
+      p {
+        margin: 0 0 35px 0;
+        color: #666;
+        line-height: 30px;
+      }
+    }
+  }
+  .question.active {
+    border: 1px solid transparent;
+    background: #fff;
+    -webkit-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    -moz-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    .question-title::after{
+      @extend %icon-faq_close_answer;
+    }
+    .answer {
+      display: block;
+    }
+  }
+  .see-more {
+    display: inline-block;
+    border: 1px solid #dedede;
+    a {
+      padding: 15px 30px;
+      display: block;
+      color: #666;
+      text-decoration: none;
+    }
+  }
+  .see-more:hover {
+    border-color: #000;
+  }
+  .not-found {
+    background: #f0f0f0;
+    padding: 35px;
+    text-align: left;
+    .question-title {
+      display: block;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    p {
+      margin: 0 0 20px;
+      color: #666;
+    }
+  }
+}
+.tab-holder.vacancies::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/*
+@media screen and (max-width: 1669px)
+@media screen and (max-width: 1279px)
+@media screen and (max-width: 1023px)
+@media screen and (max-width: 767px)
+@media screen and (max-width: 639px)
+@media screen and (max-width: 567px)
+@media screen and (max-width: 411px)
+*/

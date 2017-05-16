@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'head.html' %}
+    <body>
+        <div id="wrapper">
+            {% include 'hidden-menu.html' %}
+            {% include 'hidden-search.html' %}
+            {% include 'hidden-feedback.html' %}
+
+            {% include 'header.html' %}
+
+            <div id="main">
+              <div class="not-found">
+                <div class="not-found-box">
+                  <div class="inside-box">
+                    <span class="not-found-text">СТРАНИЦА НЕ НАЙДЕНА</span>
+                    <a href="/" class="to-main">На главную</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            {% include 'footer.html' %}
+
+        </div>
+        {% include 'js.html' %}
+    </body>
+</html>

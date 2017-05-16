@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+<body>
+<div id="wrapper">
+    {% include 'hidden-menu.html' %}
+    {% include 'hidden-search.html' %}
+    {% include 'hidden-feedback.html' %}
+    {% include 'popup-after-add-review.html' %}
+
+    {% include 'header.html' %}
+    <main id="main">
+        <div class="content-box">
+            <ul class="breadcrumbs">
+                <li><a href="/">Главная</a></li>
+                <li><span>Оформление заказа</span></li>
+            </ul>
+            <div class="order-holder">
+                <div class="box-title">
+                    <span class="title-holder">Спасибо, ваш заказ оформлен</span>
+                </div>
+                <div class="number-holder">
+                    Ваш заказ №
+                    <span class="number-order">6876532476</span>
+                    успешно создан
+                </div>
+                <a href="#" class="continue-shopping">
+                    Продолжить покупки
+                </a>
+            </div>
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+
+</div>
+{% include 'js.html' %}
+</body>
+</html>

@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+<body>
+<div id="wrapper">
+    {% include 'hidden-menu.html' %}
+    {% include 'hidden-search.html' %}
+    {% include 'hidden-feedback.html' %}
+    {% include 'popup-after-add-review.html' %}
+    {% include 'popup-service.html' %}
+    {% include 'popup-video.html' %}
+
+    {% include 'header.html' %}
+    <main id="main">
+        <div class="image-top services-apple-iphone-all">
+            <div class="image-holder">
+                <ul class="breadcrumbs services">
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="our-services.html">Наши услуги</a></li>
+                    <li><a href="our-services-apple.html">Ремонт Apple</a></li>
+                    <li><a href="our-services-apple-iphone.html">Ремонт Iphone</a></li>
+                    <li><span class="active-iphone">Ремонт Iphone 6</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="iphone-all-box">
+            <ul class="iphone-all-link">
+              <li>
+                  <a class="iphone4" href="#">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 4
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a class="iphone4s" href="#">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 4S
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a class="iphone5" href="#">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 5
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a class="iphone5s" href="#">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 5S
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a class="iphone5c" href="#">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 5C
+                      </div>
+                  </a>
+              </li>
+              <li class="active">
+                  <span class="iphone6">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 6
+                      </div>
+                  </span>
+              </li>
+              <li>
+                  <a class="iphone6plus" href="#">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 6 PLUS
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a class="iphone6s" href="#">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 6S
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a class="iphone6splus" href="#">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 6S PLUS
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a class="iphone7" href="#">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 7
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a class="iphone7plus" href="#">
+                      <div class="link-img">
+                          <img src="data/all_iphone_img.png" title="iphone icon" alt="iphone icon" style="width: 24px; height: 47px;"/>
+                      </div>
+                      <div class="name-link">
+                          IPHONE 7 PLUS
+                      </div>
+                  </a>
+              </li>
+            </ul>
+        </div>
+        <div class="tab-holder iphone-all">
+            <div class="top-repairs-box">
+                <div class="repairs-box">
+                    <div class="cooperation-info">
+                        <span data="Ремонт Iphone 6" class="info-title">РЕМОНТ IPHONE 6</span>
+                        <div class="block-text">
+                            <p>Нужна помощь вашему iPhone? Сервисный центр TRENDS с удовольствием вернет его в рабочее
+                                состояние, вновь обеспечив Вам радость использования первоклассного телефона. Замена
+                                разбитого стекла, глубокий или программный ремонт, unlock, и перепрошивка все будет
+                                сделано в лучшем виде, и, конечно же, в кратчайшие сроки, ведь невозможно переоценить
+                                важность времени выполнения ремонтных работ, когда речь идет об iPhone - о вещи, которой
+                                каждый из нас
+                                Нужна помощь вашему iPhone? Сервисный центр TRENDS с удовольствием вернет его в рабочее
+                                состояние, вновь обеспечив Вам радость использования первоклассного телефона. Замена
+                                разбитого стекла, глубокий или программный ремонт, unlock, и перепрошивка все будет
+                                сделано в лучшем виде, и, конечно же, в кратчайшие сроки, ведь невозможно переоценить
+                                важность времени выполнения ремонтных работ, когда речь идет об iPhone - о вещи, которой
+                                каждый из нас </p>
+                        </div>
+                        <span class="read-more">Подробнее<em></em></span>
+                        <span class="read-more close">Скрыть<em></em></span>
+                    </div>
+                    <div class="repairs-img">
+                        <img src="data/repairs_iphone_img.png" title="iphone" alt="iphone"/>
+                    </div>
+                </div>
+            </div>
+            <div class="product-list repairs">
+                <ul class="tabset contacts repairs">
+                    <li><a class="tab active" data="Замена дисплея" href="#tab-21">ЗАМЕНА ДИСПЛЕЯ</a></li>
+                    <li><a class="tab" data="Замена корпуса" href="#tab-22">ЗАМЕНА КОРПУСА</a></li>
+                    <li><a class="tab" data="Ремонт камеры" href="#tab-23">РЕМОНТ КАМЕРЫ</a></li>
+                    <li><a class="tab" data="Ремонт шлейфа кнопки" href="#tab-24">РЕМОНТ ШЛЕЙФА КНОПКИ</a></li>
+                </ul>
+                <div class="tab-holder contacts">
+                    <div id="tab-21">
+                        <div class="sliders-box">
+                            <div class="slider-holder">
+                                <div class="slider-repair">
+                                    <div class="slider-info">
+                                        <span data="Разбитый дисплей" class="info-title">РАЗБИТЫЙ ДИСПЛЕЙ</span>
+                                        <div class="info-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                            </p>
+                                        </div>
+                                        <div class="currency-block">
+                                            <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                                            <span class="btn-service slider-btn">Заказать</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-img">
+                                        <img src="data/broken_iphone.png" title="broken iphone" alt="broken iphone" />
+                                    </div>
+                                </div>
+                                <div class="slider-repair">
+                                    <div class="slider-info">
+                                        <span data="Битые пиксели" class="info-title">БИТЫЕ ПИКСЕЛИ</span>
+                                        <div class="info-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                            </p>
+                                        </div>
+                                        <div class="currency-block">
+                                            <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                                            <span class="btn-service slider-btn">Заказать</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-img">
+                                        <img src="data/broken_ipad.png" title="broken ipad" alt="broken ipad" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-22">
+                        <div class="sliders-box">
+                            <div class="slider-holder">
+                                <div class="slider-repair">
+                                    <div class="slider-info">
+                                        <span data="Задняя часть" class="info-title">ЗАДНЯЯ ЧАСТЬ</span>
+                                        <div class="info-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                            </p>
+                                        </div>
+                                        <div class="currency-block">
+                                            <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                                            <span class="btn-service slider-btn">Заказать</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-img">
+                                        <img src="data/broken_iphone.png" title="broken iphone" alt="broken iphone" />
+                                    </div>
+                                </div>
+                                <div class="slider-repair">
+                                    <div class="slider-info">
+                                        <span data="Передняя часть" class="info-title">ПЕРЕДНЯЯ ЧАСТЬ</span>
+                                        <div class="info-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                            </p>
+                                        </div>
+                                        <div class="currency-block">
+                                            <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                                            <span class="btn-service slider-btn">Заказать</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-img">
+                                        <img src="data/broken_ipad.png" title="broken ipad" alt="broken ipad" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-23">
+                        <div class="sliders-box">
+                            <div class="slider-holder">
+                                <div class="slider-repair">
+                                    <div class="slider-info">
+                                        <span data="Ремонт камеры" class="info-title">РЕМОНТ КАМЕРЫ</span>
+                                        <div class="info-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                            </p>
+                                        </div>
+                                        <div class="currency-block">
+                                            <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                                            <span class="btn-service slider-btn">Заказать</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-img">
+                                        <img src="data/broken_iphone.png" title="broken iphone" alt="broken iphone" />
+                                    </div>
+                                </div>
+                                <div class="slider-repair">
+                                    <div class="slider-info">
+                                        <span data="Замена камеры" class="info-title">ЗАМЕНА КАМЕРЫ</span>
+                                        <div class="info-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                            </p>
+                                        </div>
+                                        <div class="currency-block">
+                                            <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                                            <span class="btn-service slider-btn">Заказать</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-img">
+                                        <img src="data/broken_ipad.png" title="broken ipad" alt="broken ipad" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-24">
+                        <div class="sliders-box">
+                            <div class="slider-holder">
+                                <div class="slider-repair">
+                                    <div class="slider-info">
+                                        <span class="info-title">ЗАМЕНА ДИСПЛЕЯ</span>
+                                        <div class="info-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                            </p>
+                                        </div>
+                                        <div class="currency-block">
+                                            <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                                            <span class="btn-service slider-btn">Заказать</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-img">
+                                        <img src="data/broken_iphone.png" title="broken iphone" alt="broken iphone" />
+                                    </div>
+                                </div>
+                                <div class="slider-repair">
+                                    <div class="slider-info">
+                                        <span class="info-title">ЗАМЕНА ДИСПЛЕЯ</span>
+                                        <div class="info-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation
+                                            </p>
+                                        </div>
+                                        <div class="currency-block">
+                                            <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                                            <span class="btn-service slider-btn">Заказать</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-img">
+                                        <img src="data/broken_ipad.png" title="broken ipad" alt="broken ipad" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="repair-services-title">
+                <span class="box-title">ВЫБЕРИТЕ УСЛУГУ</span>
+                <span data="Онлайн консультация" class="consultation-link btn-service">Заказать онлайн консультацию</span>
+            </div>
+            <ul class="repair-services-box">
+                <li class="service-selection">
+                    <div class="service-name-price">
+                        <span class="service-title" data="Ремонт и замена дисплея">Ремонт и замена дисплея</span>
+                        <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                    </div>
+                    <div class="service-infobox">
+                        <div class="service-infobox-inner">
+                            <div class="infobox-links">
+                                <div class="links-holder">
+                                    <span data="Ремонт в офисе" class="btn-service office">Ремонт в офисе</span>
+                                    <span data="Вызов мастера" class="btn-service master">Вызов мастера</span>
+                                    <span data="Вызов курьера" class="btn-service courier">Вызов курьера</span>
+                                </div>
+                                <div class="infobox-img">
+                                    <img src="data/infobox_img.jpg" />
+                                </div>
+                            </div>
+                            <div class="infobox-text">
+                                <span class="infobox-text-click"></span>
+                                <span class="open-close-icon">
+                                    <span class="vertical-line"></span>
+                                    <span class="horizontal-line"></span>
+                                </span>
+                                <div class="holder-text">
+                                    <p>Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. При этом, разбитое или
+                                        треснувшее стекло — одно из наиболее часто встречающихся повреждений
+                                        Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-selection">
+                    <div class="service-name-price">
+                        <span data="Ремонт корпуса" class="service-title">Ремонт корпуса</span>
+                        <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                    </div>
+                    <div class="service-infobox">
+                        <div class="service-infobox-inner">
+                            <div class="infobox-links">
+                                <div class="links-holder">
+                                    <span data="Ремонт в офисе" class="btn-service office">Ремонт в офисе</span>
+                                    <span data="Вызов мастера" class="btn-service master">Вызов мастера</span>
+                                    <span data="Вызов курьера" class="btn-service courier">Вызов курьера</span>
+                                </div>
+                                <div class="infobox-img">
+                                    <img src="data/infobox_img.jpg" />
+                                </div>
+                            </div>
+                            <div class="infobox-text">
+                                <span class="infobox-text-click"></span>
+                                <span class="open-close-icon">
+                                    <span class="vertical-line"></span>
+                                    <span class="horizontal-line"></span>
+                                </span>
+                                <div class="holder-text">
+                                    <p>Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. При этом, разбитое или
+                                        треснувшее стекло — одно из наиболее часто встречающихся повреждений
+                                        Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-selection">
+                    <div class="service-name-price">
+                        <span data="Ремонт аккумулятора" class="service-title">Ремонт аккумулятора</span>
+                        <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                    </div>
+                    <div class="service-infobox">
+                        <div class="service-infobox-inner">
+                            <div class="infobox-links">
+                                <div class="links-holder">
+                                    <span data="Ремонт в офисе" class="btn-service office">Ремонт в офисе</span>
+                                    <span data="Вызов мастера" class="btn-service master">Вызов мастера</span>
+                                    <span data="Вызов курьера" class="btn-service courier">Вызов курьера</span>
+                                </div>
+                                <div class="infobox-img">
+                                    <img src="data/infobox_img.jpg" />
+                                </div>
+                            </div>
+                            <div class="infobox-text">
+                                <span class="infobox-text-click"></span>
+                                <span class="open-close-icon">
+                                    <span class="vertical-line"></span>
+                                    <span class="horizontal-line"></span>
+                                </span>
+                                <div class="holder-text">
+                                    <p>Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. При этом, разбитое или
+                                        треснувшее стекло — одно из наиболее часто встречающихся повреждений
+                                        Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-selection">
+                    <div class="service-name-price">
+                        <span data="Ремонт и замена дисплея" class="service-title">Ремонт и замена дисплея</span>
+                        <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                    </div>
+                    <div class="service-infobox">
+                        <div class="service-infobox-inner">
+                            <div class="infobox-links">
+                                <div class="links-holder">
+                                    <span data="Ремонт в офисе" class="btn-service office">Ремонт в офисе</span>
+                                    <span data="Вызов мастера" class="btn-service master">Вызов мастера</span>
+                                    <span data="Вызов курьера" class="btn-service courier">Вызов курьера</span>
+                                </div>
+                                <div class="infobox-img">
+                                    <img src="data/infobox_img.jpg" />
+                                </div>
+                            </div>
+                            <div class="infobox-text">
+                                <span class="infobox-text-click"></span>
+                                <span class="open-close-icon">
+                                    <span class="vertical-line"></span>
+                                    <span class="horizontal-line"></span>
+                                </span>
+                                <div class="holder-text">
+                                    <p>Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. При этом, разбитое или
+                                        треснувшее стекло — одно из наиболее часто встречающихся повреждений
+                                        Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-selection">
+                    <div class="service-name-price">
+                        <span data="Ремонт и замена дисплея" class="service-title">Ремонт и замена дисплея</span>
+                        <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                    </div>
+                    <div class="service-infobox">
+                        <div class="service-infobox-inner">
+                            <div class="infobox-links">
+                                <div class="links-holder">
+                                    <span data="Ремонт в офисе" class="btn-service office">Ремонт в офисе</span>
+                                    <span data="Вызов мастера" class="btn-service master">Вызов мастера</span>
+                                    <span data="Вызов курьера" class="btn-service courier">Вызов курьера</span>
+                                </div>
+                                <div class="infobox-img">
+                                    <img src="data/infobox_img.jpg" />
+                                </div>
+                            </div>
+                            <div class="infobox-text">
+                                <span class="infobox-text-click"></span>
+                                <span class="open-close-icon">
+                                    <span class="vertical-line"></span>
+                                    <span class="horizontal-line"></span>
+                                </span>
+                                <div class="holder-text">
+                                    <p>Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. При этом, разбитое или
+                                        треснувшее стекло — одно из наиболее часто встречающихся повреждений
+                                        Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-selection">
+                    <div class="service-name-price">
+                        <span data="Ремонт и замена дисплея" class="service-title">Ремонт и замена дисплея</span>
+                        <span class="currency-service"><em class="number">549</em>грн - <em class="number">649</em>грн</span>
+                    </div>
+                    <div class="service-infobox">
+                        <div class="service-infobox-inner">
+                            <div class="infobox-links">
+                                <div class="links-holder">
+                                    <span data="Ремонт в офисе" class="btn-service office">Ремонт в офисе</span>
+                                    <span data="Вызов мастера" class="btn-service master">Вызов мастера</span>
+                                    <span data="Вызов курьера" class="btn-service courier">Вызов курьера</span>
+                                </div>
+                                <div class="infobox-img">
+                                    <img src="data/infobox_img.jpg" />
+                                </div>
+                            </div>
+                            <div class="infobox-text">
+                                <span class="infobox-text-click"></span>
+                                <span class="open-close-icon">
+                                    <span class="vertical-line"></span>
+                                    <span class="horizontal-line"></span>
+                                </span>
+                                <div class="holder-text">
+                                    <p>Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. При этом, разбитое или
+                                        треснувшее стекло — одно из наиболее часто встречающихся повреждений
+                                        Процесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                        При этом, разбитое или треснувшее стекло — одно из наиболее часто встречающихся
+                                        поврежденийПроцесс замены стекла и дисплея у разных моделей айфонов различаются.
+                                        У моделей 4, 4s и 5 стекло объединено в единый блок с сенсорной панелью
+                                        и вместе с ней заменяется. Поэтому, даже если поврежден только дисплей,
+                                        менять все равно придется весь модуль целиком. У моделей 4, 4s и 5 стекло
+                                        объединено в единый блок с сенсорной панелью и вместе с ней заменяется. Поэтому,
+                                        даже если поврежден только дисплей, менять все равно придется весь модуль целиком.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="services-not-found">
+                <div class="not-found-form">
+                    <span class="form-title">НЕ НАШЛИ УСЛУГУ</span>
+                    <form name="not-found" class="form-faq" action="#" method="post">
+                        <input type="tel" placeholder="Телефон" />
+                        <label class="error">Введите имя</label>
+                        <textarea rows="1" placeholder="Описание поломки"></textarea>
+                        <label class="error">Введите имя</label>
+                        <span class="submit-form after-add-review">Отправить</span>
+                    </form>
+                </div>
+                <div class="not-found-img">
+                    <img src="data/box_img.png" />
+                </div>
+            </div>
+            <div class="services-container">
+                <div class="services-container-inner">
+                    <div class="service-replace">
+                        <div class="video-box">
+                            <img src="data/service_iphones.png" />
+                            <div class="video-btn-holder">
+                                <div class="video-waves-holder">
+                                    <div class="video-waves"></div>
+                                    <a class="video-opener">
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="replace-info">
+                            <span class="form-title">УСЛУГА "ИЗ IPHONE В IPHONE"</span>
+                            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                                <div class="box-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    </p>
+                                </div>
+                            </div>
+                            <span data='УСЛУГА ИЗ IPHONE В IPHONE' class="btn-service to-order">Заказать</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-block">
+                <ul class="services-holder">
+                    <li>
+                        <div class="box-image master"></div>
+                        <div class="box-info">
+                            <span class="title-box">ВЫЗОВ МАСТЕРА НА МЕСТО</span>
+                            <P>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore
+                            </P>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-image courier"></div>
+                        <div class="box-info">
+                            <span class="title-box">ОТПРАВИТЬ КУРЬЕРОМ НА СЕРВИСНЫЙ ЦЕНТР</span>
+                            <P>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore
+                            </P>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-image repairs"></div>
+                        <div class="box-info">
+                            <span class="title-box">100% КАЧЕСТВО РЕМОНТА</span>
+                            <P>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore
+                            </P>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-image original"></div>
+                        <div class="box-info">
+                            <span class="title-box">СТАВИМ ТОЛЬКО ОРИГИНАЛЬНЫЕ ДЕТАЛИ</span>
+                            <P>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore
+                            </P>
+                        </div>
+                    </li>
+                </ul>
+                <div class="services-box-img">
+                    <img src="data/services_box_img.jpg" title="disassembled iphone" alt="disassembled iphone" />
+                </div>
+            </div>
+            <div class="gallery-container">
+                <span class="box-title">НАША ГАЛЕРЕЯ</span>
+                <div class="gallery-box">
+                    <div class="gallery-slide">
+                        <div class="gallery-img">
+                            <img src="data/gallery_img1.jpg" title="iphone 6" alt="iphone 6" />
+                            <span class="img-text">Замена экрана Iphone 6</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-img">
+                            <img src="data/gallery_img2.jpg" title="iphone 6" alt="iphone 6" />
+                            <span class="img-text">Замена экрана Iphone 6</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-img">
+                            <img src="data/gallery_img3.jpg" title="iphone 6" alt="iphone 6" />
+                            <span class="img-text">Замена экрана Iphone 6</span>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-img">
+                            <img src="data/gallery_img1.jpg" title="iphone 6" alt="iphone 6" />
+                            <span class="img-text">Замена экрана Iphone 6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+
+</div>
+{% include 'js.html' %}
+</body>
+</html>

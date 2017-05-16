@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+<body>
+<div id="wrapper">
+    {% include 'hidden-menu.html' %}
+    {% include 'hidden-search.html' %}
+    {% include 'hidden-feedback.html' %}
+    {% include 'popup-after-add-review.html' %}
+
+    {% include 'header.html' %}
+    <main id="main">
+        <div class="content-box">
+            <ul class="breadcrumbs">
+                <li><a href="/">Главная</a></li>
+                <li><span>Блог</span></li>
+            </ul>
+            <div class="enter-registration">
+                <div class="box-title">ВХОД / РЕГИСТРАЦИЯ</div>
+                <div class="product-list">
+                    <ul class="tabset">
+                        <li><a class="tab active" href="#tab-11">Вход</a></li>
+                        <li><a class="tab" href="#tab-12">Регистрация</a></li>
+                    </ul>
+                    <div class="tab-holder">
+                        <div id="tab-11">
+                            <form name="enter" class="form-faq" action="#" method="post">
+                                <input type="text" placeholder="Телефон или email">
+                                <label class="error">Введите имя</label>
+                                <input type="password" placeholder="Пароль">
+                                <label class="error">Введите имя</label>
+                                <div class="form-box">
+                                    <input type="checkbox" value="remember-me" id="remember-me"><label for="remember-me">Запомнить меня</label>
+                                    <span class="forgot-password">Забыли пароль?</span>
+                                </div>
+                                <span class="submit-form after-add-review">Вход</span>
+                            </form>
+                        </div>
+                        <div id="tab-12">
+                            <form name="registration" class="form-faq" action="#" method="post">
+                                <input type="text" placeholder="Имя">
+                                <label class="error">Введите имя</label>
+                                <input type="tel" placeholder="Телефон">
+                                <label class="error">Введите имя</label>
+                                <input type="email" placeholder="Email">
+                                <label class="error">Введите имя</label>
+                                <input type="password" placeholder="Пароль">
+                                <label class="error">Введите имя</label>
+                                <input type="password" placeholder="Повторите пароль">
+                                <label class="error">Введите имя</label>
+                                <span class="submit-form registration after-add-review">Вход</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+
+</div>
+{% include 'js.html' %}
+</body>
+</html>

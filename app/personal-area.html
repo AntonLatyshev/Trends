@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+<body>
+<div id="wrapper">
+    {% include 'hidden-menu.html' %}
+    {% include 'hidden-search.html' %}
+    {% include 'hidden-feedback.html' %}
+
+    {% include 'header.html' %}
+    <main id="main">
+        <div class="content-box">
+            <ul class="breadcrumbs">
+                <li><a href="/">Главная</a></li>
+                <li><span>Блог</span></li>
+            </ul>
+            <span class="box-title">ЛИЧНЫЙ КАБИНЕТ</span>
+            <div class="personal-area-box">
+                <ul class="personal-menu">
+                    <li class="link1 active"><a href="#">Моя информация</a></li>
+                    <li class="link2"><a href="personal-area-orders.html">Мои заказы</a></li>
+                    <li class="link3"><a href="personal-area-login.html">Смена пароля</a></li>
+                    <li class="link4"><a href="#">Выход</a></li>
+                </ul>
+                <form class="form-faq" name="personal-info" method="post" action="#">
+                    <input type="text" placeholder="Имя">
+                    <label class="error">Введите имя</label>
+                    <input type="tel" placeholder="Телефон">
+                    <label class="error">Введите имя</label>
+                    <input type="text" placeholder="Город">
+                    <label class="error">Введите имя</label>
+                    <input type="email" placeholder="Email">
+                    <label class="error">Введите имя</label>
+                    <button type="submit" class="submit-form">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+
+</div>
+{% include 'js.html' %}
+</body>
+</html>

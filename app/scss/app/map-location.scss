@@ -1,0 +1,103 @@
+.location {
+    text-align: left;
+    @media screen and (max-width: 374px) {
+        text-align: center;
+    }
+    .location-title {
+        font-size: 13px;
+        color: #333;
+        margin: 0 0 15px;
+        @media screen and (max-width: 374px) {
+            font-size: 11px;
+            font-weight: 600;
+        }
+    }
+    .location-holder {
+        overflow: hidden;
+        .location-image {
+            float: left;
+            width: 102px;
+            @media screen and (max-width: 767px) {
+                width: 80px;
+            }
+            @media screen and (max-width: 374px) {
+                float: none;
+                display: inline-block;
+                margin: 0 0 10px;
+            }
+            img {
+                display: inline-block;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+.location-info {
+    float: right;
+    padding: 0 0 0 10px;
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
+    @media screen and (max-width: 374px) {
+        float: none;
+        font-size: 11px;
+        padding: 0;
+        display: inline-block;
+    }
+    .telephone {
+        margin: 0 0 15px;
+        position: relative;
+        @media screen and (max-width: 374px) {
+            margin: 0 0 5px;
+        }
+        a {
+            line-height: 14px;
+            font-weight: 500;
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            transition: .3s;
+            padding: 0 0 0 20px;
+            &:hover {
+                color: #ffcc00;
+                text-decoration: underline;
+            }
+            &::before {
+                content: " ";
+                display: block;
+                @extend %icon-map-location_tel_icon;
+                position: absolute;
+                top: 0;
+                left: 0px;
+            }
+        }
+        span {
+            color: #999;
+            font-weight: 500;
+        }
+    }
+    .schedule {
+        padding: 0 0 0 20px;
+        line-height: 14px;
+        font-weight: 500;
+        display: inline-block;
+        color: #333;
+        position: relative;
+        &::before {
+            content: " ";
+            display: block;
+            @extend %icon-map-location_schedule_icon;
+            position: absolute;
+            top: 0;
+            left: 0px;
+        }
+        p {
+            margin: 0 0 5px;
+        }
+        span {
+            color: #999;
+            font-weight: 500;
+        }
+    }
+}

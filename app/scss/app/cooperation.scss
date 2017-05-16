@@ -1,0 +1,211 @@
+// body.cooperation {
+//     .image-top {
+//       background-size: cover;
+//     }
+// }
+
+.product-list.cooperation {
+  max-width: 1171px;
+  margin: 0 auto 100px;
+  text-align: left;
+  .tabset {
+    float: left;
+    overflow: visible;
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (max-width: 613px) {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    li {
+      margin: 0;
+      width: 292px;
+      @media screen and (max-width: 613px) {
+          float: none;
+          display: inline-block;
+      }
+      @media screen and (max-width: 449px) {
+          width: auto;
+      }
+      a {
+        z-index: 1;
+        position: relative;
+        border: solid;
+        border-width: 1px 1px 3px 1px;
+        border-color: #e5e5e5 #e5e5e5 #ffcc00 #e5e5e5;
+      }
+      a.active::after,
+      a:hover::after {
+        display: none;
+      }
+      a.active {
+        z-index: 2;
+        border-color: #fff;
+        -webkit-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+        -moz-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+        box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+      }
+    }
+    li:hover a {
+      z-index: 2;
+      position: relative;
+      border-color: #fff;
+      -webkit-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+      -moz-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+      box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    }
+  }
+  .tabset.contact::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+.cooperation-img {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 55px;
+  position: relative;
+  z-index: 1;
+  img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.cooperation-box {
+    @media screen and (max-width: 1279px) {
+        padding: 0 0 0 15px;
+    }
+    @media screen and (max-width: 1023px) {
+        padding: 0 15px;
+    }
+  .cooperation-info {
+    float: left;
+    max-width: 505px;
+    margin: 0;
+    color: #666;
+    @media screen and (max-width: 1023px) {
+        float: none;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .after-submit-form {
+        margin: -30px auto 20px;
+    }
+    .box-text {
+        max-height: 157px;
+        margin: 0 0 70px;
+        .mCSB_draggerRail {
+            width: 6px;
+            background-color: #e5e5e5;
+        }
+        .mCSB_dragger_bar {
+            width: 6px;
+            background-color: #999;
+        }
+        p {
+            margin: 0;
+            line-height: 22px;
+            text-align: left;
+        }
+    }
+    h2 {
+      color: #333;
+      text-transform: uppercase;
+      line-height: 24px;
+    }
+    ul {
+      margin: 0;
+      padding: 0 0 0 20px;
+      li {
+        margin-bottom: 10px;
+        color: #666;
+      }
+    }
+  }
+  .sidebar-faq {
+    float: right;
+    padding: 30px 35px;
+    top: -100px;
+    right: 78px;
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    -moz-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    text-align: center;
+    @media screen and (max-width: 1279px) {
+        right: 15px;
+    }
+    @media screen and (max-width: 1023px) {
+        float: none;
+        top: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .sidebar-title {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      color: #333;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .sidebar-signature {
+      display: inline-block;
+      max-width: 230px;
+      color: #999;
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+    .submit-form {
+      cursor: pointer;
+      background: #333;
+      color: #fff;
+      border: none;
+      width: 220px;
+      height: 40px;
+    }
+    .submit-form:hover {
+      background: #000;
+    }
+  }
+}
+.cooperation-box::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+
+
+.read-more {
+    cursor: pointer;
+    max-width: 200px;
+    margin-top: 20px;
+    color: #333;
+    display: inline-block;
+    padding: 5px 0;
+    height: 100%;
+    border-bottom: 1px dotted #333;
+    em {
+      display: inline-block;
+      margin-left: 10px;
+      @extend %icon-read_more_arrow_down;
+    }
+    em.close {
+      @extend %icon-read_more_arrow_up;
+    }
+}
+.read-more:hover {
+  color: #ffcc00;
+  border-color: #ffcc00;
+}

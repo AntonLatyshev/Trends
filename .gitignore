@@ -1,0 +1,12 @@
+node_modules
+dist
+app/components
+npm-debug.log
+app/scripts/files.js
+.idea
+/image/cache/
+/system/logs/
+/system/cache/
+
+/config.php
+/admin/config.php

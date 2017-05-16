@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+<body>
+<div id="wrapper">
+    {% include 'hidden-menu.html' %}
+    {% include 'hidden-search.html' %}
+    {% include 'hidden-feedback.html' %}
+
+    {% include 'header.html' %}
+    <div id="main">
+        <div class="image-top" style="background-image: url('/data/top_asus_bg.jpg');">
+            <div class="image-holder">
+                <ul class="breadcrumbs">
+                  <li><a href="/">Главная</a></li>
+                  <li><span>Блог</span></li>
+                </ul>
+                <span class="title-text">НАШ БЛОГ</span>
+            </div>
+        </div>
+        <div class="content-blog">
+            <div class="special-sliders">
+                <div class="slide-box">
+                    <img src="data/suggestions_img1.jpg" alt="image description">
+                    <span class="slide-name">БАННЕР С ПРЕДЛОЖЕНИЯМИ</span>
+                </div>
+                <div class="slide-box">
+                    <img src="data/suggestions_img2.jpg" alt="image description">
+                    <span class="slide-name">БАННЕР С ПРЕДЛОЖЕНИЯМИ</span>
+                </div>
+                <div class="slide-box">
+                    <img src="data/suggestions_img1.jpg" alt="image description">
+                    <span class="slide-name">БАННЕР С ПРЕДЛОЖЕНИЯМИ</span>
+                </div>
+                <div class="slide-box">
+                    <img src="data/suggestions_img2.jpg" alt="image description">
+                    <span class="slide-name">БАННЕР С ПРЕДЛОЖЕНИЯМИ</span>
+                </div>
+            </div>
+            <div class="blog-box">
+              <div class="blog-sidebar">
+                  <span class="mobile-opener">Показать категории</span>
+                  <ul class="nav-blog-box">
+                      <li class="blog-link active"><a href="#">Все статьи</a></li>
+                      <li class="blog-link"><a href="#">Обзоры</a></li>
+                      <li class="blog-link"><a href="#">Ремонт</a></li>
+                      <li class="blog-link"><a href="#">Новости техники</a></li>
+                      <li class="blog-link"><a href="#">Обзоры</a></li>
+                      <li class="blog-link"><a href="#">Аксессуары</a></li>
+                  </ul>
+                  <div class="top-products">
+                      <span class="top-title">ТОП ТОВАРЫ</span>
+                      <div class="top-products-slider">
+                          <div class="product-slide">
+                              <a href="#">
+                                  <span class="top-icon">TOP</span>
+                                  <div class="product-img">
+                                      <img src="data/top_product_img1.jpg" alt="top">
+                                  </div>
+                              <span class="product-name">
+                                  Asus VivoBook Max X541SA (X541SA-XO041D) Black
+                              </span>
+                                  <span class="topical-price">$849.99</span>
+                              </a>
+                          </div>
+                          <div class="product-slide">
+                              <a href="#">
+                                  <span class="top-icon">TOP</span>
+                                  <div class="product-img">
+                                      <img src="data/top_product_img1.jpg" alt="top">
+                                  </div>
+                              <span class="product-name">
+                                  Asus Vivo Book Max X541SA Black
+                              </span>
+                                  <span class="topical-price">$749.99</span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="top-products">
+                      <span class="top-title">НАШИ УСЛУГИ</span>
+                      <div class="top-products-slider">
+                          <div class="product-slide services-slide">
+                              <a href="#">
+                                  <div class="product-img">
+                                      <img src="data/our_services_img1.png" alt="services">
+                                  </div>
+                                  <div class="product-info">
+                                      <span class="product-name">Ремонт Apple</span>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+                                  </div>
+                              </a>
+                          </div>
+                          <div class="product-slide services-slide">
+                              <a href="#">
+                                  <div class="product-img">
+                                      <img src="data/our_services_img1.png" alt="services">
+                                  </div>
+                                  <div class="product-info">
+                                      <span class="product-name">Ремонт Samsung</span>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="blog-content">
+                  <ul class="blog-articles">
+                        <li class="slide-news-box">
+                            <div class="news-box-img">
+                                <a href="#"><img src="data/articles_img1.jpg" alt="apple"></a>
+                            </div>
+                            <div class="news-box-info">
+                                <span class="info-date">16.01.2016</span>
+                                <a href="#">5 правил в маркетинге, которые уже не работают</a>
+                                <div class="info-text">
+                                    <p>Просто потому, что все делают, это не значит, что вы должны поступать так же. В мире
+                                        маркетинга есть правила, которые все привыкли использовать, но стоит ли</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide-news-box">
+                            <div class="news-box-img">
+                                <a href="#"><img src="data/articles_img2.jpg" alt="apple"></a>
+                            </div>
+                            <div class="news-box-info">
+                                <span class="info-date">16.01.2016</span>
+                                <a href="#">Apple запустила программу замены дефектных кабелей USB-C</a>
+                                <div class="info-text">
+                                    <p>Просто потому, что все делают, это не значит, что вы должны поступать так же. В мире
+                                        маркетинга есть правила, которые все привыкли использовать, но стоит ли</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide-news-box">
+                            <div class="news-box-img">
+                                <a href="#"><img src="data/articles_img3.jpg" alt="apple"></a>
+                            </div>
+                            <div class="news-box-info">
+                                <span class="info-date">16.01.2016</span>
+                                <a href="#">Apple запустила программу замены дефектных кабелей USB-C</a>
+                                <div class="info-text">
+                                    <p>Просто потому, что все делают, это не значит, что вы должны поступать так же. В мире
+                                        маркетинга есть правила, которые все привыкли использовать, но стоит ли</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide-news-box">
+                            <div class="news-box-img">
+                                <a href="#"><img src="data/articles_img4.jpg" alt="apple"></a>
+                            </div>
+                            <div class="news-box-info">
+                                <span class="info-date">16.01.2016</span>
+                                <a href="#">Apple запустила программу замены дефектных кабелей USB-C</a>
+                                <div class="info-text">
+                                    <p>Просто потому, что все делают, это не значит, что вы должны поступать так же. В мире
+                                        маркетинга есть правила, которые все привыкли использовать, но стоит ли</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide-news-box">
+                            <div class="news-box-img">
+                                <a href="#"><img src="data/articles_img5.jpg" alt="apple"></a>
+                            </div>
+                            <div class="news-box-info">
+                                <span class="info-date">16.01.2016</span>
+                                <a href="#">Apple запустила программу замены дефектных кабелей USB-C</a>
+                                <div class="info-text">
+                                    <p>Просто потому, что все делают, это не значит, что вы должны поступать так же. В мире
+                                        маркетинга есть правила, которые все привыкли использовать, но стоит ли</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide-news-box">
+                            <div class="news-box-img">
+                                <a href="#"><img src="data/articles_img6.jpg" alt="apple"></a>
+                            </div>
+                            <div class="news-box-info">
+                                <span class="info-date">16.01.2016</span>
+                                <a href="#">Apple запустила программу замены дефектных кабелей USB-C</a>
+                                <div class="info-text">
+                                    <p>Просто потому, что все делают, это не значит, что вы должны поступать так же. В мире
+                                        маркетинга есть правила, которые все привыкли использовать, но стоит ли</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="page-nav">
+                      <ul class="nav-box">
+                        <li class="arrow-left"><a href="#"></a></li>
+                        <li><span class="page-active">1</span></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li class="ellipsis"><span>...</span></li>
+                        <li><a href="#">12</a></li>
+                        <li class="arrow-right"><a href="#"></a></li>
+                      </ul>
+                    </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+</div>
+{% include 'js.html' %}
+</body>
+</html>

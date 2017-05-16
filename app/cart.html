@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+    <body>
+        <div id="wrapper">
+            {% include 'hidden-menu.html' %}
+            {% include 'hidden-search.html' %}
+            {% include 'hidden-feedback.html' %}
+            {% include 'popup-order-edit.html' %}
+
+            {% include 'header.html' %}
+            <div class="content-box cart">
+                <ul class="breadcrumbs">
+                    <li><a href="/">Главная</a></li>
+                    <li><span>Оформление заказа</span></li>
+                </ul>
+            </div>
+            <div class="wrapper-cart cart-page">
+                <div class="title">ОФОРМЛЕНИЕ ЗАКАЗА</div>
+                <div class="cart-holder">
+                  <div class="cart-row">
+                    <div class="cart-from">
+                      <div class="step step-1">
+                        <div class="step-heading">
+                          <span class="number">1</span>
+                          <span class="label-cart">Контактные данные <a href="#" class="edit-contact">Редактировать</a></span>
+                        </div>
+                        <div class="step-hidden">
+                          <div class="login-success">
+                            <form action="#">
+                              <div class="row name">
+                                <input type="text" value="Дмитрий Шмалько">
+                              </div>
+                              <div class="row city">
+                                <input type="text" value="Харьков">
+                                <span class="city-example">Например,  <a href="#">Харьков</a></span>
+                              </div>
+                              <div class="row">
+                                <input type="tel" placeholder="Телефон">
+                              </div>
+                              <div class="row row-box">
+                                <button>Далее</button>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="not-login">
+                            <ul class="form-tab-nav">
+                              <li class="active"><a href="#new-customer">Я новый покупатель</a></li>
+                              <li><a href="#old-customer">Я постоянный клиент</a></li>
+                            </ul>
+                            <div class="cart-froms-tab">
+                              <!-- new customer form-->
+                              <div class="tab new-customer active" id="new-customer">
+                                <form action="">
+                                  <div class="row">
+                                    <label for="with-register" class="register">
+                                      <input type="checkbox" id="with-register">
+                                      <span>Оформить заказ с регистрацией</span>
+                                    </label>
+                                  </div>
+                                  <div class="row name">
+                                    <input type="text" placeholder="Имя и фамилия">
+                                  </div>
+                                  <div class="row city">
+                                    <input type="text" placeholder="Город">
+                                    <span class="city-example">Например,  <a href="#">Харьков</a></span>
+                                  </div>
+                                  <div class="row">
+                                    <input type="tel" placeholder="Телефон">
+                                  </div>
+                                  <div class="hidden-row">
+                                    <div class="row">
+                                      <input type="email" placeholder="Email">
+                                    </div>
+                                    <div class="row password">
+                                      <input type="password" placeholder="Введите пароль">
+                                    </div>
+                                    <div class="row password">
+                                      <input type="password" placeholder="Подтвердите пароль">
+                                    </div>
+                                  </div>
+                                  <div class="row row-box">
+                                    <button>Далее</button>
+                                  </div>
+                                </form>
+
+                              </div>
+                              <!-- old customer  form -->
+                              <div class="tab old-customer " id="old-customer">
+                                <form action="#" id="login-form">
+                                  <div class="row">
+                                    <input type="email" placeholder="Email">
+                                  </div>
+                                  <div class="row password">
+                                    <input type="password" placeholder="Пароль">
+                                  </div>
+                                  <div class="row row-box">
+                                    <button>Войти</button>
+                                    <a href="#" class="forgot-passwd">Я забыл пароль</a>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="step step-2">
+                        <div class="step-heading">
+                          <span class="number">2</span>
+                          <span class="label-cart">Выбор способов доставки и оплаты</span>
+                        </div>
+                        <div class="step-hidden delivery">
+                          <div class="col col-1">
+                            <span class="label-text">Доставка</span>
+                            <div class="info">i
+                              <div class="info-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit mollit anim id est laborum.</div>
+                            </div>
+                          </div>
+                          <div class="col col-2">
+                            <div class="row">
+                              <label for="our-store">
+                                <input type="radio" name="delivery" id="our-store">
+                                <span class="pay">Заберу сам (бесплатно)</span>
+                              </label>
+                            </div>
+                            <div class="select" data-radio="our-store">
+                              <div class="row">
+                              <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                  <option value="1">Склад №1, Пушкинская, 51</option>
+                                  <option value="2">Склад №2, Пушкинская, 52</option>
+                                  <option value="3">Склад №3, Пушкинская, 53</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <label for="np">
+                                <input type="radio" name="delivery" id="np">
+                                <span class="pay">Из отделения «Новой Почты» (35 грн)</span>
+                              </label>
+                            </div>
+                            <div class="select" data-radio="np">
+                              <div class="row">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                  <option value="1">Харьков</option>
+                                  <option value="2">Киев</option>
+                                  <option value="3">Склад №3, Пушкинская, 53</option>
+                                </select>
+                              </div>
+                              <div class="row">
+                              <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                  <option value="1">Склад №3, Пушкинская, 53</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <label for="curier">
+                                <input type="radio" name="delivery" id="curier">
+                                <span class="pay">Курьером по адресу (80 грн)</span>
+                              </label>
+                            </div>
+                            <div class="select" data-radio="curier">
+                              <div class="row address">
+                                <div class="input-row">
+                                  <input type="text" placeholder="Улица">
+                                </div>
+                                <div class="input-row double">
+                                    <input type="text" placeholder="Квартира">
+                                  <input type="text" placeholder="Дом">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="step-hidden pay-type">
+                          <div class="col col-1">
+                            <span class="label-text">Оплата</span>
+                            <div class="info">i
+                              <div class="info-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit mollit anim id est laborum.</div>
+                            </div>
+                          </div>
+                          <div class="col col-2">
+                            <div class="row">
+                              <label for="cashe">
+                                <input type="radio" name="pay-type" id="cashe">
+                                <span class="pay">Оплата наличными</span>
+                              </label>
+                            </div>
+                            <div class="row">
+                              <label for="cod">
+                                <input type="radio" name="pay-type" id="cod">
+                                <span class="pay">Оплата наложенным платежем</span>
+                              </label>
+                            </div>
+                            <div class="row">
+                              <label for="courier">
+                                <input type="radio" name="pay-type" id="courier">
+                                <span class="pay">Оплата курьеру</span>
+                              </label>
+                            </div>
+                            <div class="row">
+                              <label for="card">
+                                <input type="radio" name="pay-type" id="card">
+                                <span class="pay">Оплата кредитной картой</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="step-hidden comment">
+                          <div class="col-1"></div>
+                          <div class="col-2">
+                            <label for="comment">
+                              <span class="comment-handler">Добавить комментарий к заказу</span>
+                              <div class="info">i
+                                <div class="info-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit mollit anim id est laborum.</div>
+                              </div>
+                            </label>
+                            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-product">
+                      <div class="cart-product-holder">
+                        <div class="cart-product-list">
+                          <div class="product-item">
+                            <span class="close-product-cart">&times;</span>
+                            <a href="#" class="image"><img src="data/cart-product1.jpg" title="smartphone" alt="smartphone" /></a>
+                            <div class="info-box">
+                              <a href="#" class="name">Asus VivoBook Max X541SA(X541SA-XO041D) Black</a>
+                              <div class="info-row">
+                                <span class="count">2 шт.</span>
+                                <span class="edit">Редактировать</span>
+                                <div class="price">$649.99</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-item">
+                            <span class="close-product-cart">&times;</span>
+                            <a href="#" class="image"><img src="data/cart-product2.jpg" title="smartphone" alt="smartphone" /></a>
+                            <div class="info-box">
+                              <a href="#" class="name">Asus VivoBook Max X541SA(X541SA-XO041D) Black</a>
+                              <div class="info-row">
+                                <span class="count">2 шт.</span>
+                                <span class="edit">Редактировать</span>
+                                <div class="price">$649.99</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="total-holder">
+                          <div class="cart-total">
+                              <em>Сумма заказа:</em>
+                              <span class="price">$1649.99</span>
+                          </div>
+                          <div class="delivery-total">
+                              <em>Доставка:</em>
+                              <span class="price">$16</span>
+                          </div>
+                          <div class="final-price">
+                            Общая сумма: <span class="price">$1649.99</span>
+                          </div>
+                          <div class="order-holder btn">
+                            <button>Заказ подтверждаю</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- <div class="cart-popup-holder">
+              <div class="overlay"></div>
+              <form action="#" class="cart-edit">
+                <div class="close-btn"></div>
+                <div class="product-edit">
+                  <a href="#" class="image"></a>
+                  <div class="info-box">
+                    <span class="edit-title">Радактирование товара</span>
+                    <a href="#" class="name">Кеды Las Espadrillas Черные (24 см)</a>
+                    <div class="info-row">
+                      <div class="info-item"><span>Цвет.</span> Черные</div>
+                      <div class="info-item"><span>Размер.</span> 24 см</div>
+                      <div class="info-item"><span>Арт.</span> 27635245</div>
+                    </div>
+                    <div class="edit-row">
+                      <div class="edit-item">
+                        <span class="label-cart">Цена за 1 ед.:</span>
+                        <span class="price-for-item"><em>222</em> грн.</span>
+                      </div>
+                      <div class="edit-item">
+                        <span class="label-cart">Количество:</span>
+                        <div class="cart-count-holder">
+                          <input type="number" pattern="[0-9]*" value="3" id="count-edit">
+                        </div>
+                      </div>
+                      <div class="edit-item">
+                        <span class="label-cart">Итого:</span>
+                        <span class="price-total"><em>666</em> грн.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup-buttons">
+                  <button class="back">Вернуться к оформлению заказа</button>
+                  <button class="save">Сохранить</button>
+                </div>
+              </form>
+            </div> -->
+
+            {% include 'footer.html' %}
+
+        </div>
+        <script type="text/javascript" src="js/vendor/cart.js"></script>
+    {% include 'js.html' %}
+    </body>
+</html>

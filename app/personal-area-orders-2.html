@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+<body>
+<div id="wrapper">
+    {% include 'hidden-menu.html' %}
+    {% include 'hidden-search.html' %}
+    {% include 'hidden-feedback.html' %}
+
+    {% include 'header.html' %}
+    <main id="main">
+        <div class="content-box">
+            <ul class="breadcrumbs">
+                <li><a href="/">Главная</a></li>
+                <li><span>Блог</span></li>
+            </ul>
+            <span class="box-title">ЛИЧНЫЙ КАБИНЕТ</span>
+            <div class="personal-area-box">
+                <ul class="personal-menu orders">
+                    <li class="link1"><a href="personal-area.html">Моя информация</a></li>
+                    <li class="link2 active"><a href="#">Мои заказы</a></li>
+                    <li class="link3"><a href="personal-area-login.html">Смена пароля</a></li>
+                    <li class="link4"><a href="#">Выход</a></li>
+                </ul>
+                <div class="table-box orders">
+                    <div class="data-holder">
+                        <a class="link-back" href="javascript:history.back();">Назад</a>
+                        <div class="data-box">
+                            <span>ТТН курьерской службы:<em class="courier-order">Новая почта - 7898284н293</em></span>
+                            <span>Дата заказа:<em class="date-order">11.07.2016</em></span>
+                        </div>
+                    </div>
+                    <table class="orders-table order" cellspacing="0" cellpadding="0">
+                        <tr class="cap-table">
+                            <th>Товар</th>
+                            <th>Цена за ед.</th>
+                            <th>Кол-во</th>
+                            <th>Итого</th>
+                        </tr>
+                        <tr><td>
+                            <div class="item-holder">
+                                <a href="#">
+                                    <div class="item-img">
+                                        <img src="data/table_orders_img1.jpg" title="iphone" alt="iphone" />
+                                    </div>
+                                    <span class="item-name">Ihone 6S plus Gold</span>
+                                </a>
+                            </div>
+                        </td><td>3214,50 грн</td><td><span class="quantity">2 шт.</span></td><td>5356 грн</td></tr>
+                        <tr><td>
+                            <div class="item-holder">
+                                <a href="#">
+                                    <div class="item-img">
+                                        <img src="data/table_orders_img2.jpg" alt="iphone">
+                                    </div>
+                                    <span class="item-name">Asus VivoBook Max X541SA(X541SA-XO041D) Black</span>
+                                </a>
+                            </div>
+                        </td><td>3214,50 грн</td><td><span class="quantity">2 шт.</span></td><td>5356 грн</td></tr>
+                    </table>
+                    <div class="table-total">
+                        <div class="total-info">
+                            <span>Способ доставки:<em>«Новая Почта», Харьков, Отделение №43</em></span>
+                            <span>Способ оплаты:<em>Банковский перевод</em></span>
+                        </div>
+                        <span class="total-sum">Сумма заказа<em>13 399 грн</em></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+
+</div>
+{% include 'js.html' %}
+</body>
+</html>

@@ -1,0 +1,829 @@
+#header {
+  background: #000;
+  position: relative;
+  z-index: 15;
+  .header-holder {
+    max-width: 1171px;
+    margin: 0 auto;
+    position: relative;
+    @media screen and (max-width: 767px) {
+      position: static;
+    }
+    .logo {
+      float: left;
+      display: block;
+      margin: 15px 35px 15px 0;
+      @extend %icon-logo_header;
+      @media screen and (max-width: 767px) {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+      }
+      a {
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+  .header-holder::after {
+    content:" ";
+    display: block;
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .header-holder {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #header .header-holder .logo {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #header .header-holder {
+    max-width: 440px;
+    text-align: center;
+  }
+  #header .header-holder {
+    max-width: 290px;
+  }
+}
+
+
+
+.language {
+  float: left;
+  padding-top: 24px;
+  font-size: 13px;
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    ul {
+      display: none;
+    }
+    @media screen and (min-width: 1250px) {
+      > li:hover > ul {
+        display: block;
+      }
+    }
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+  }
+  > ul > li {
+    position: relative;
+    > span {
+      color: #666;
+      position: relative;
+      padding: 0 65px 24px 0;
+      display: block;
+      cursor: default;
+      @media screen and (max-width: 1023px) {
+        padding: 0 35px 24px 0;
+      }
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    > span::after {
+      position: absolute;
+      top: 5px;
+      right: 50px;
+      content: " ";
+      display: block;
+      @extend %icon-language_arrow;
+      @media screen and (max-width: 1023px) {
+        right: 24px;
+      }
+    }
+    ul {
+      position: absolute;
+      z-index: 5;
+      width: 110px;
+      background: #fff;
+      border-radius: 0 0 10px 10px;
+      @media screen and (max-width: 767px) {
+        position: static;
+        display: block;
+        overflow: hidden;
+        width: auto;
+        box-shadow: none;
+        background: none;
+      }
+      li {
+        text-align: center;
+        box-sizing: border-box;
+        @media screen and (max-width: 767px) {
+          float: left;
+          margin: 0 10px 0 0;
+        }
+        a {
+          position: relative;
+          width: 100%;
+          color: #000;
+          padding: 15px 25px;
+          overflow: hidden;
+          @media screen and (max-width: 767px) {
+            color: #fff;
+            padding: 0;
+          }
+          &:hover {
+            span {
+              text-decoration: underline;
+            }
+          }
+          span {
+            display: block;
+            float: left;
+            line-height: 20px;
+          }
+          img {
+            display: block;
+            float: right;
+            @media screen and (max-width: 767px) {
+              display: none;
+            }
+          }
+        }
+      }
+      li:nth-child(n+2) {
+        border-top: 1px solid #f5f5f5;
+        @media screen and (max-width: 767px) {
+          border:none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .language > ul > li > a {
+    padding: 0 30px 24px 0;
+  }
+
+  .language > ul > li > a::after {
+    right: 15px;
+  }
+}
+
+.navigation-box {
+  float: left;
+  padding: 24px 0 0 0;
+  margin-right: 35px;
+  @media screen and (max-width: 1023px) {
+    margin-right: 25px;
+  }
+  @media screen and (max-width: 767px) {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 15px;
+  }
+  .nav-link {
+    color: #fff;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    text-transform: uppercase;
+    transition: .3s;
+    @media screen and (max-width: 1023px) {
+      padding-left: 20px;
+    }
+    &.active,
+    &:hover {
+        color: #ffcc00;
+    }
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 2px;
+      @extend %icon-nav_icon;
+    }
+  }
+  .nav-holder {
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    height: 448px;
+    width: 882px;
+    overflow: hidden;
+    display: none;
+    @media screen and (max-width: 1250px) {
+      width: 100%;
+      height: auto;
+      left: 0;
+    }
+    @media screen and (max-width: 767px) {
+      text-align: left;
+    }
+    &.active {
+        display: block;
+    }
+    .image-box {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+    }
+    .nav {
+      height: 100%;
+      ul {
+        margin:0;
+        padding:0;
+        list-style: none;
+        background: #fff;
+        width: 294px;
+        position: relative;
+        height: inherit;
+        box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.1);
+        @media screen and (max-width: 1250px) {
+          width: 100%;
+        }
+         ul {
+          position: absolute;
+          left: 100%;
+          top: 0;
+          box-shadow: inset 10px 10px 40px rgba(0, 0, 0, 0.1);
+          min-height: 448px;
+          display: none;
+          li.parent {
+              a {
+                  em {
+                      display: block;
+                      position: absolute;
+                      right: 25px;
+                      top: 50%;
+                      margin: -4px 0 0 -2px;
+                      @extend %icon-nav_arrow;
+                  }
+              }
+              &:hover {
+                  a{
+                      em {
+                          @extend %icon-nav_arrow_hover;
+                      }
+                  }
+              }
+          }
+          @media screen and (max-width: 1250px) {
+            position: relative;
+            left: 0;
+            box-shadow: none;
+            background: #c3e5fd;
+          }
+          a {
+            color: #999;
+            @media screen and (max-width: 1250px) {
+              color: #333;
+              font-size: 16px;
+            }
+          }
+          ul {
+            background: #eee;
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+        &.active-link {
+          > li.parent > a::after {
+            transform: rotate(180deg);
+            margin-top: -7px;
+          }
+        }
+        li {
+          @media screen and (min-width: 1250px) {
+            &:hover {
+              background: #333;
+              > a {
+                  color: #fff;
+              }
+            }
+            &.parent:hover {
+                > ul {
+                  display: block;
+                }
+            }
+          }
+          a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            line-height: 16px;
+            padding: 10px 20px 10px 30px;
+            position: relative;
+            @media screen and (max-width: 1250px) {
+              font-size: 20px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+  li {
+    &.parent {
+        // position: relative;
+        a {
+            em {
+                display: block;
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                margin: -4px 0 0 -2px;
+                @extend %icon-nav_arrow;
+            }
+        }
+        &::after {
+        //   content: "";
+        //   display: block;
+        //   position: absolute;
+        //   top: 50%;
+        //   right: 30px;
+        //   transform: translateY(-50%);
+        //   @extend %icon-nav_arrow;
+          @media screen and (max-width: 1250px) {
+            background: url('../images/drop-arrow.png') no-repeat;
+            width: 20px;
+            height: 13px;
+            background-size: 20px 13px;
+          }
+        }
+        &:hover {
+            a {
+                em {
+                    @extend %icon-nav_arrow_hover;
+                }
+            }
+          &::after {
+            @extend %icon-nav_arrow_hover;
+            @media screen and (max-width: 1250px) {
+              background: url('../images/drop-arrow.png') no-repeat;
+              width: 20px;
+              height: 13px;
+              background-size: 20px 13px;
+            }
+          }
+        }
+    }
+  }
+}
+
+
+
+.box-nav {
+  float: left;
+  display: block;
+  padding: 24px 0 0 0;
+  @media screen and (max-width: 1279px) {
+      display: none;
+  }
+  ul {
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    list-style: none;
+    li {
+      float: left;
+      margin-right: 35px;
+      span,
+      a {
+        cursor: pointer;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        padding-bottom: 24px;
+        transition: .3s;
+      }
+    }
+    li.active a,
+    li:hover > span,
+    li:hover a {
+      color: #ffcc00;
+    }
+  }
+}
+
+
+
+
+.more-box {
+  padding: 24px 0 0 0;
+  margin-right: 35px;
+  float: left;
+  @media screen and (max-width: 767px) {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+  }
+  .nav-more{
+    display: block;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    padding-right: 15px;
+    color: #fff;
+    padding-bottom: 24px;
+    transition: .3s;
+    @media screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+  .nav-more::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    @extend %icon-more_arrow;
+  }
+  .nav-more.active,
+  .nav-more:hover {
+    color: #ffcc00;
+  }
+  .nav-more.active::after,
+  .nav-more:hover::after {
+      @extend %icon-more_arrow_h;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .more-box {
+    margin-right: 15px;
+  }
+
+}
+
+
+
+.phone-header {
+  float: left;
+  padding: 14px 0 0 0;
+  max-width: 180px;
+  width: 100%;
+  text-align: center;
+  a {
+    display: block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 14px;
+    line-height: 18px;
+    transition: .3s;
+    &:hover {
+        color: #ffcc00;
+    }
+  }
+  span {
+    font-size: 11px;
+    color: #949494;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .phone-header {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+
+
+
+.user-panel {
+  float: right;
+  position: relative;
+  > ul > li:hover {
+      background: #1d1d1d;
+  }
+  ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    ul {
+      display: none;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    > li:hover > ul {
+      display: block;
+    }
+  }
+  .hidden-card {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 500;
+    background: #fff;
+    width: 400px;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+      left: -117px;
+    }
+    .card-box-title {
+      display: block;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 600;
+      padding: 20px 0;
+    }
+    .total-box {
+      color: #999;
+      margin-bottom: 20px;
+      .total-price {
+        color: #000;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+    .checkout {
+      display: inline-block;
+      padding: 16px 40px;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+    .checkout:hover {
+      background: #000;
+    }
+  }
+  .hidden-card.active {
+    display: block;
+  }
+  ul::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  li {
+    cursor: pointer;
+    float: left;
+    width: 60px;
+    height: 62px;
+    text-align: center;
+    position: relative;
+    a{
+        display: block;
+        height: 100%;
+    }
+    .holder-icon {
+      display: block;
+      padding-top: 22px;
+      height: 100%;
+      span {
+          display: inline-block;
+      }
+      .search-header {
+        @extend %icon-search_header;
+      }
+      .feedback-header {
+        @extend %icon-phone_header;
+      }
+      .login-header {
+        @extend %icon-login_header;
+      }
+    }
+    ul {
+      width: 230px;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 600;
+      background: #fff;
+      @media screen and (max-width: 767px) {
+        left: -80px;
+      }
+      li {
+        height: auto;
+        width: 100%;
+        float: none;
+        a {
+          display: block;
+          padding: 13px 0;
+          font-size: 16px;
+          line-height: 18px;
+          color: #666;
+          text-decoration: none;
+        }
+        .phone{
+          position: relative;
+        }
+        .phone::before {
+          content: " ";
+          display: block;
+          @extend  %icon-feedback_phone;
+          position: absolute;
+          top: 50%;
+          margin: -7px 0 0;
+          left: 30px;
+        }
+      }
+      .feedback span {
+        display: inline-block;
+        padding: 13px 0 0;
+        margin: 0 0 13px;
+        font-size: 13px;
+        color: #333;
+        border-bottom: 2px dotted #333;
+      }
+      .feedback:hover span {
+          color: #ffcc00;
+        border-color: #f2c40d;
+      }
+      li:hover {
+        background: none;
+      }
+      li a:hover {
+        color: #f2c40d;
+      }
+      li:nth-child(n+2){
+        border-top: 1px solid #e5e5e5;
+      }
+    }
+  }
+  .card-box {
+    position: relative;
+    &.active {
+        background: #151515;
+    }
+  }
+  > li:hover {
+    background: #151515;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .user-panel > ul > li {
+    width: 40px;
+  }
+
+  .nav > ul > li ul {
+    left: -100%;
+    width: 220px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .user-panel {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+
+
+
+.card-header {
+  @extend %icon-card_header;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  .card-counter {
+    position: absolute;
+    right: -15px;
+    bottom: -10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #ffcc00;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+.user-panel .selected-item-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  border: solid #ccc;
+  border-width: 1px 0 1px 0;
+  margin-bottom: 20px;
+  li {
+    float: none;
+    height: auto;
+    width: 100%;
+    text-align: left;
+    padding: 20px 40px 20px 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #ededed;
+    .item-img {
+      float: left;
+      width: 75px;
+      height: 75px;
+      margin-right: 15px;
+      position: relative;
+      a {
+        padding: 0;
+      }
+      img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .item-box {
+      max-width: 170px;
+      float: left;
+      a:hover {
+        color: #ffcc00;
+      }
+      span {
+        display: block;
+      }
+      .name-item {
+        line-height: 16px;
+        padding: 0;
+        font-size: 14px;
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: #333;
+      }
+      .quantity-item {
+        display: inline-block;
+        background: #f5f5f5;
+        color: #535353;
+        font-size: 13px;
+        border-radius: 5px;
+        padding: 3px;
+      }
+    }
+    .item-price {
+      float: right;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .item-delete {
+      cursor: pointer;
+      position: absolute;
+      content: " ";
+      top: 16px;
+      right: 0;
+      font-size: 24px;
+      font-weight: 200;
+      &:hover {
+          color: #f07f85;
+      }
+    }
+  }
+  li:first-child {
+    border-top: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .user-panel .hidden-card {
+    width: 320px;
+    left: -80px;
+  }
+  .user-panel .selected-item-box {
+    padding: 0;
+  }
+  .user-panel .selected-item-box li .item-img {
+    margin-right: 10px;
+  }
+  .user-panel .selected-item-box li .item-box{
+    max-width: 130px;
+  }
+  .user-panel .selected-item-box li .item-box .name-item {
+    font-size: 12px;
+  }
+  .user-panel .selected-item-box li .item-delete {
+    right: 11px;
+    top: 21px;
+  }
+}

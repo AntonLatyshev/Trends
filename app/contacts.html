@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+<body>
+<div id="wrapper">
+    {% include 'hidden-menu.html' %}
+    {% include 'hidden-search.html' %}
+    {% include 'hidden-feedback.html' %}
+    {% include 'popup-after-add-review.html' %}
+
+    {% include 'header.html' %}
+    <main id="main">
+        <div class="content-box">
+            <ul class="breadcrumbs">
+                <li><a href="/">Главная</a></li>
+                <li><span>Блог</span></li>
+            </ul>
+            <div class="contact-box">
+                <span class="box-title">КОНТАКТЫ</span>
+                <div class="species-contacts">
+                    <div class="contact">
+                        <div class="contact-img">
+                            <span class="tel"></span>
+                        </div>
+                        <div class="contact-info">
+                            <span class="info-title">Телефоны:</span>
+                            <a href="tel:+380507865131">+380507865131</a>
+                            <a href="tel:+380505769155">+380505769155</a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-img">
+                            <span class="email"></span>
+                        </div>
+                        <div class="contact-info">
+                            <span class="info-title">Email:</span>
+                            <a href="office@exco.com">office@exco.com (офис)</a>
+                            <a href="office@exco.com">office@exco.com (менеджер)</a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-img">
+                            <span class="social"></span>
+                        </div>
+                        <div class="contact-info">
+                            <span class="info-title">Подписывайтесь на нас:</span>
+                            <ul class="social-share">
+                                <li><a href="#" class="facebook"></a></li>
+                                <li><a href="#" class="vk"></a></li>
+                                <li><a href="#" class="youtube"></a></li>
+                                <li><a href="#" class="instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="links-maps">
+                <!-- <li><a class="tab active" href="#tab-11">КИЕВ</a></li>
+                <li><a class="tab" href="#tab-12">ХАРЬКОВ</a></li>
+                <li><a class="tab" href="#tab-13">ОДЕССА</a></li>
+                <li><a class="tab" href="#tab-14">ЛЬВОВ</a></li> -->
+                <li><a href="#" data-location="location1" class="link-map active">КИЕВ</a></li>
+                <li><a href="#" data-location="location2" class="link-map">ХАРЬКОВ</a></li>
+                <li><a href="#" data-location="location3" class="link-map">ОДЕССА</a></li>
+                <li><a href="#" data-location="location4" class="link-map">ЛЬВОВ</a></li>
+            </div>
+            <div class="holder-maps">
+                <div id="map-location"></div>
+            </div>
+        </div>
+        <div class="ask-question">
+            <span class="sidebar-title">ЕСТЬ ВОПРОСЫ?</span>
+            <form name="question" class="form-faq" action="#" method="post">
+                <input type="text" placeholder="Имя">
+                <label class="error">Введите имя</label>
+                <input type="tel" placeholder="Телефон">
+                <label class="error">Введите имя</label>
+                <input type="email" placeholder="Email">
+                <label class="error">Введите имя</label>
+                <textarea rows="1" placeholder="Ваш вопрос"></textarea>
+                <label class="error">Введите имя</label>
+                <span class="submit-form after-add-review">Задать вопрос</span>
+            </form>
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+
+</div>
+
+
+<script>
+var location1 =  [
+  ['<div class="location"><div class="location-title">Адрес: 01001, г. Киев, ул. Крещатик, 50</div><div class="location-holder"><div class="location-image"><img src="data/image_map.jpg" /></div><div class="location-info"><div class="telephone"><a href="#">+380507865131</a><span>(Офис)</span></div><div class="telephone"><a href="#">+380507865131</a><span>(Менеджер)</span></div><div class="schedule"><p>Пн-Пт <span>с</span> 10:00 <span>до</span> 20:00 </p><p>Сб <span>с</span> 10:00 <span>до</span>19:00</p><p>Вс - выходной</p></div></div></div></div>', 50.443236, 30.52008],
+
+  ['<div class="location"><div class="location-title">Адрес: 01001, г. Киев, ул. Крещатик, 50</div><div class="location-holder"><div class="location-image"><img src="data/image_map.jpg" /></div><div class="location-info"><div class="telephone"><a href="#">+380507865131</a><span>(Офис)</span></div><div class="telephone"><a href="#">+380507865131</a><span>(Менеджер)</span></div><div class="schedule"><p>Пн-Пт <span>с</span> 10:00 <span>до</span> 20:00 </p><p>Сб <span>с</span> 10:00 <span>до</span>19:00</p><p>Вс - выходной</p></div></div></div></div>', 50.457295, 30.487747],
+
+  ['<div class="location"><div class="location-title">Адрес: 01001, г. Киев, ул. Крещатик, 50</div><div class="location-holder"><div class="location-image"><img src="data/image_map.jpg" /></div><div class="location-info"><div class="telephone"><a href="#">+380507865131</a><span>(Офис)</span></div><div class="telephone"><a href="#">+380507865131</a><span>(Менеджер)</span></div><div class="schedule"><p>Пн-Пт <span>с</span> 10:00 <span>до</span> 20:00 </p><p>Сб <span>с</span> 10:00 <span>до</span>19:00</p><p>Вс - выходной</p></div></div></div></div>', 50.435869, 30.476761],
+
+  ['<div class="location"><div class="location-title">Адрес: 01001, г. Киев, ул. Крещатик, 50</div><div class="location-holder"><div class="location-image"><img src="data/image_map.jpg" /></div><div class="location-info"><div class="telephone"><a href="#">+380507865131</a><span>(Офис)</span></div><div class="telephone"><a href="#">+380507865131</a><span>(Менеджер)</span></div><div class="schedule"><p>Пн-Пт <span>с</span> 10:00 <span>до</span> 20:00 </p><p>Сб <span>с</span> 10:00 <span>до</span>19:00</p><p>Вс - выходной</p></div></div></div></div>', 50.420787, 30.559158],
+
+  ['<div class="location"><div class="location-title">Адрес: 01001, г. Киев, ул. Крещатик, 50</div><div class="location-holder"><div class="location-image"><img src="data/image_map.jpg" /></div><div class="location-info"><div class="telephone"><a href="#">+380507865131</a><span>(Офис)</span></div><div class="telephone"><a href="#">+380507865131</a><span>(Менеджер)</span></div><div class="schedule"><p>Пн-Пт <span>с</span> 10:00 <span>до</span> 20:00 </p><p>Сб <span>с</span> 10:00 <span>до</span>19:00</p><p>Вс - выходной</p></div></div></div></div>', 50.483307, 30.569458]
+
+];
+
+var location2 =  [
+  ['<div class="location"><div class="location-title">Адрес: 01001, г. Киев, ул. Крещатик, 50</div><div class="location-holder"><div class="location-image"><img src="data/image_map.jpg" /></div><div class="location-info"><div class="telephone"><a href="#">+380507865131</a><span>(Офис)</span></div><div class="telephone"><a href="#">+380507865131</a><span>(Менеджер)</span></div><div class="schedule"><p>Пн-Пт <span>с</span> 10:00 <span>до</span> 20:00 </p><p>Сб <span>с</span> 10:00 <span>до</span>19:00</p><p>Вс - выходной</p></div></div></div></div>', 49.993500, 36.230383]
+];
+
+var location3 =  [
+  ['<div class="location"><div class="location-title">Адрес: 01001, г. Киев, ул. Крещатик, 50</div><div class="location-holder"><div class="location-image"><img src="data/image_map.jpg" /></div><div class="location-info"><div class="telephone"><a href="#">+380507865131</a><span>(Офис)</span></div><div class="telephone"><a href="#">+380507865131</a><span>(Менеджер)</span></div><div class="schedule"><p>Пн-Пт <span>с</span> 10:00 <span>до</span> 20:00 </p><p>Сб <span>с</span> 10:00 <span>до</span>19:00</p><p>Вс - выходной</p></div></div></div></div>', 46.482526, 30.723310]
+];
+
+var location4 =  [
+  ['<div class="location"><div class="location-title">Адрес: 01001, г. Киев, ул. Крещатик, 50</div><div class="location-holder"><div class="location-image"><img src="data/image_map.jpg" /></div><div class="location-info"><div class="telephone"><a href="#">+380507865131</a><span>(Офис)</span></div><div class="telephone"><a href="#">+380507865131</a><span>(Менеджер)</span></div><div class="schedule"><p>Пн-Пт <span>с</span> 10:00 <span>до</span> 20:00 </p><p>Сб <span>с</span> 10:00 <span>до</span>19:00</p><p>Вс - выходной</p></div></div></div></div>', 49.839683, 24.029717],
+
+   ['<div class="location"><div class="location-title">Адрес: 01001, г. Киев, ул. Крещатик, 50</div><div class="location-holder"><div class="location-image"><img src="data/image_map.jpg" /></div><div class="location-info"><div class="telephone"><a href="#">+380507865131</a><span>(Офис)</span></div><div class="telephone"><a href="#">+380507865131</a><span>(Менеджер)</span></div><div class="schedule"><p>Пн-Пт <span>с</span> 10:00 <span>до</span> 20:00 </p><p>Сб <span>с</span> 10:00 <span>до</span>19:00</p><p>Вс - выходной</p></div></div></div></div>', 49.833891, 24.007244]
+
+];
+
+
+</script>
+
+{% include 'js.html' %}
+</body>
+</html>

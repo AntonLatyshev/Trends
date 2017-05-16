@@ -1,0 +1,286 @@
+// body.contacts {
+//     .image-holder {
+//         padding: 0;
+//     }
+//     .breadcrumbs {
+//         padding: 25px 0;
+//         @media screen and (max-width: 1250px) {
+//           padding: 25px 15px;
+//         }
+//     }
+// }
+
+
+
+
+
+.contact-box {
+  max-width: 1090px;
+  margin: 0 auto 150px;
+  text-align: center;
+  @media screen and (max-width: 845px) {
+      margin: 0 auto 20px;
+  }
+}
+
+.species-contacts {
+  overflow: hidden;
+  margin-left: -167px;
+  @media screen and (max-width: 1119px) {
+    display: inline-block;
+    margin: 0;
+  }
+  .contact {
+    float: left;
+    text-align: left;
+    margin-left: 167px;
+    overflow: hidden;
+    @media screen and (max-width: 1119px) {
+      margin: 0 10px;
+    }
+    @media screen and (max-width: 845px) {
+        width: 100%;
+        max-width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
+    }
+    .contact-img {
+      float: left;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 25px;
+      border: 1px solid #f2f2f2;
+      .tel {
+        display: inline-block;
+        vertical-align: middle;
+        @extend %icon-contacts_tel_icon;
+      }
+      .email {
+        display: inline-block;
+        vertical-align: middle;
+        @extend %icon-contacts_email_icon;
+      }
+      .social {
+        display: inline-block;
+        vertical-align: middle;
+        @extend %icon-contacts_social_icon;
+      }
+    }
+    .contact-info {
+      overflow: hidden;
+      .info-title {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      > a {
+        display: block;
+        text-decoration: none;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      > a:hover {
+        color: #ffcc00;
+      }
+    }
+  }
+}
+
+.social-share {
+  margin: 0 0 0 -10px;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      margin: 0;
+      &.facebook {
+        @extend %icon-share_facebook;
+      }
+      &.vk {
+        @extend %icon-share_vk;
+      }
+      &.youtube {
+        @extend %icon-share_youtube;
+      }
+      &.instagram {
+        @extend %icon-share_instagram;
+      }
+    }
+  }
+
+  li:hover .facebook {
+      @extend %icon-share_facebook_hover;
+  }
+  li:hover .vk {
+      @extend %icon-share_vk_hover;
+  }
+  li:hover .youtube  {
+      @extend %icon-share_youtube_hover;
+  }
+  li:hover .instagram {
+      @extend %icon-share_instagram_hover;
+  }
+}
+
+.holder-maps {
+    height: 500px;
+    @media screen and(max-width: 767px) {
+        height: 300px;
+    }
+    #map-location {
+        height: 100%;
+    }
+}
+
+
+.product-list {
+  text-align: center;
+  margin-bottom: 120px;
+  .links-maps {
+    max-width: 1172px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    @media screen and (max-width: 1167px) {
+      white-space: nowrap;
+      overflow-x: scroll;
+      border-top: 1px solid #e5e5e5;
+    }
+    li {
+      float: left;
+      margin: 0;
+      width: 292px;
+      @media screen and (max-width: 1167px) {
+        display: inline-block;
+        float: none;
+        width: 200px;
+      }
+      @media screen and (max-width: 567px) {
+          width: auto;
+      }
+      a {
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        z-index: 1;
+        color: #666;
+        font-weight: 500;
+        position: relative;
+        padding: 15px 0;
+        border: solid;
+        border-width: 1px 1px 3px 1px;
+        border-color: #e5e5e5 #e5e5e5 #ffcc00 #e5e5e5;
+        @media screen and (max-width: 1167px) {
+          border-color: transparent transparent #ffcc00 transparent;
+        }
+      }
+      a.active::after,
+      a:hover::after {
+        display: none;
+      }
+      a.active {
+        z-index: 2;
+        color: #ffcc00;
+        border-color: #fff;
+        -webkit-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+        -moz-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+        box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+      }
+    }
+    li:hover a {
+      z-index: 2;
+      position: relative;
+      border-color: #fff;
+      -webkit-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+      -moz-box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+      box-shadow: 0 0 20px 10px rgba(248,248,248,1);
+    }
+  }
+  .links-maps::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+
+
+.ask-question {
+  max-width: 375px;
+  margin: 0 auto 100px;
+  text-align: center;
+  .sidebar-title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  input,
+  textarea {
+    padding-left: 10px;
+    width: 100%;
+    outline: none;
+    background: none;
+    border: solid #e5e5e5;
+    border-width: 0 0 1px 0;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .submit-form {
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    border: none;
+    width: 220px;
+    height: 40px;
+  }
+  .submit-form:hover {
+    background: #000;
+  }
+}
+
+.after-submit-form {
+    display: block;
+    text-align: center;
+    margin: 0 auto 100px;
+    span {
+        display: inline-block;
+        padding: 0 0 0 40px;
+        color: #099420;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        position: relative;
+        &::before {
+            content: " ";
+            display: block;
+            width: 30px;
+            height: 20px;
+            border: solid #099420;
+            border-width: 0 0 5px 5px;
+            transform: rotate(-45deg);
+            position: absolute;
+            left: 0;
+        }
+    }
+}

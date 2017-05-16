@@ -1,0 +1,18 @@
+.hidden-item-edit .hidden-item-holder {
+    .item-info {
+        padding: 20px 0 0;
+        .item-name {
+            margin: 0 0 20px;
+            padding: 0 0 20px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .calculation-box-holder {
+            padding: 0 0 20px;
+            border-bottom: 1px solid #e5e5e5;
+            margin: 0 0 20px;
+            .calculation-box {
+                margin: 0 auto;
+            }
+        }
+    }
+}
